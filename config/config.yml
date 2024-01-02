@@ -1,0 +1,18 @@
+env: develop
+app:
+  host: 0.0.0.0
+  port: 8888
+db:
+  host: 192.168.1.122
+  port: 3306
+  user: root
+  password: 123456
+  db_name: WSC_api
+  charset: utf8mb4
+  loc: Local
+redis:
+  host: 127.0.0.1
+  port: 6379
+  password:
+  db: 0
+
