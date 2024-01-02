@@ -9,7 +9,7 @@ func WithMiddleware(h echo.HandlerFunc, middleware echo.MiddlewareFunc) echo.Han
 	return middleware(h)
 }
 
-func HookMiddleware() {
+func HookGlobalMiddleware() {
 	var hook = route.GetRoute()
 	hook.Use(logMiddleware)
 }

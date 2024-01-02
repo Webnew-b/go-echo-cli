@@ -26,16 +26,11 @@ func Init() {
 func routeInit() {
 	route.InitVal()
 	router.HookRoute()
-	middleware.HookMiddleware()
+	middleware.HookGlobalMiddleware()
 	route.StartRoute()
 }
 
 func StartDbConnect() {
 	envConfig.InitVal()
 	database.InitVal()
-}
-
-func StopServe() {
-	logUtil.Log.Println("stopping Server")
-	// todo 停止日志读写以及清退存在的协程
 }
